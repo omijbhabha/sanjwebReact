@@ -51,7 +51,7 @@ const Header = () => {
 
         <nav className={`hidden md:flex w-full justify-center space-x-8`}>
           <a
-            href="/" // Changed from "/home" to "/"
+            href="/"
             style={{ color: currentPage === "/" ? "#FFD700" : "#ffffff" }}
             className="text-lg hover:text-blue-400"
           >
