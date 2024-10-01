@@ -17,7 +17,6 @@ const Header = () => {
 
   useEffect(() => {
     window.addEventListener("resize", handleResize);
-
     handleResize();
 
     return () => {
@@ -52,15 +51,15 @@ const Header = () => {
 
         <nav className={`hidden md:flex w-full justify-center space-x-8`}>
           <a
-            href="/home"
-            style={{ color: currentPage === "/home" ? "#FFD700" : "#ffffff" }}
+            href="/" // Changed from "/home" to "/"
+            style={{ color: currentPage === "/" ? "#FFD700" : "#ffffff" }}
             className="text-lg hover:text-blue-400"
           >
             home
           </a>
           <a
-            href="/cv"
-            style={{ color: currentPage === "/cv" ? "#FFD700" : "#ffffff" }}
+            href="/work"
+            style={{ color: currentPage === "/work" ? "#FFD700" : "#ffffff" }}
             className="text-lg hover:text-blue-400"
           >
             work
@@ -80,16 +79,16 @@ const Header = () => {
       {isOpen && isMobile && (
         <nav className="md:hidden flex flex-col items-center space-y-4 pb-4 bg-black shadow-md">
           <a
-            href="/home"
-            style={{ color: currentPage === "/home" ? "#FFD700" : "#ffffff" }}
+            href="/"
+            style={{ color: currentPage === "/" ? "#FFD700" : "#ffffff" }}
             className="text-lg hover:text-blue-400"
             onClick={toggleMenu}
           >
             home
           </a>
           <a
-            href="/cv"
-            style={{ color: currentPage === "/cv" ? "#FFD700" : "#ffffff" }}
+            href="/work"
+            style={{ color: currentPage === "/work" ? "#FFD700" : "#ffffff" }}
             className="text-lg hover:text-blue-400"
             onClick={toggleMenu}
           >

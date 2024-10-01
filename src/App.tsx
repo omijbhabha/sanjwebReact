@@ -1,15 +1,22 @@
-import Header from "./Header";
-import Video from "./Pages/Home/Video";
-import Profile from "./Pages/Home/Profile";
-// import EduTimeline from "./Pages/Home/EduTimeline";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import WIP from "./pages/WIP";
+import Header from "./components/Header.tsx";
+// import Footer from "./components/Footer";
 
-export default function App() {
+const App = () => {
   return (
-    <div className="bg-black min-h-screen">
+    <Router>
       <Header />
-      <Video />
-      <Profile />
-      {/* <EduTimeline /> */}
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/work" element={<WIP />} /> {/* WIP for CV page */}
+        <Route path="/contact" element={<WIP />} /> {/* WIP for Contact page */}
+        <Route path="/about" element={<WIP />} /> {/* WIP for About page */}
+      </Routes>
+      {/* <Footer /> */}
+    </Router>
   );
-}
+};
+
+export default App;
