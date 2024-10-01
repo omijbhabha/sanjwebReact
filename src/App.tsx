@@ -11,7 +11,7 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/cv" element={<WIP />} /> {/* WIP for CV page */}
+        <Route path="/work" element={<WIP />} /> {/* WIP for CV page */}
         <Route path="/contact" element={<WIP />} /> {/* WIP for Contact page */}
         <Route path="/about" element={<WIP />} /> {/* WIP for About page */}
         <Route path="*" element={<NotFound />} />
