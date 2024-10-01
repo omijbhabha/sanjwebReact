@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import WIP from "./pages/WIP";
+import WIP from "./pages/WIP.tsx";
 import Header from "./components/Header.tsx";
 // import Footer from "./components/Footer";
 
