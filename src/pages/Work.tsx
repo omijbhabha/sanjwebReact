@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import { Suspense } from 'react';
 import workData from '../data/workData';
 
 const Work = () => {
@@ -48,7 +48,7 @@ const Work = () => {
             )}
           <h1 className="text-custom-color text-3xl text-left w-full m-4">Synopsis</h1>
           <p className="text-white text-2xl text-left w-full mb-4">{work.synopsis}</p>
-          {work.awards && (
+          {/* {work.awards && (
             <div className="awards mb-4 flex flex-wrap justify-center">
               {work.awards.map((award, awardIndex) => (
                 <img key={awardIndex} src={award.src} alt={award.alt} width="150" loading="lazy" className="mx-2" />
@@ -63,7 +63,7 @@ const Work = () => {
                 </a>
               ))}
             </div>
-          )}
+          )} */}
           <hr
             className="border-0 w-full my-12"
             style={{
