@@ -48,7 +48,7 @@ export default function Home() {
         </p>
         </article>
         <img
-        src="src/assets/pfp.jpg"
+        src="pfp.jpg"
         alt="Profile of Sanjeet Singh"
         className="w-2/3 md:w-1/3 h-auto mt-4 md:mt-0 mx-auto shadow-lg"
         loading="lazy"

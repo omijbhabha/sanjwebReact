@@ -72,9 +72,9 @@ const workData = [
     {
         title: "Mandala | Short Film",
         images: [
-            "src/assets/work/images/mandala/mandala (2).png",
-            "src/assets/work/images/mandala/mandala (5).png",
-            "src/assets/work/images/mandala/mandala (3).png"
+            "work/images/mandala/mandala (2).png",
+            "work/images/mandala/mandala (5).png",
+            "work/images/mandala/mandala (3).png"
         ],
         synopsis: "After Dev finally convinces his girlfriend, Ishika, to try LSD with him in their apartment, she wakes up the next morning feeling lucky to have come out of that crazy trip. But Dev is missing, while she’s trying to distinguish between the trip and reality, she’s met with another surprise in the form of Dev’s parents’ visit."
     },
