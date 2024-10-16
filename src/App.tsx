@@ -3,7 +3,8 @@ import Home from "./pages/Home";
 import WIP from "./pages/WIP.tsx";
 import NotFound from "./pages/NotFound";
 import Header from "./components/Header.tsx";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
+import Work from "./pages/Work.tsx";
 
 const App = () => {
   return (
@@ -11,11 +12,12 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/work" element={<WIP />} /> {/* WIP for CV page */}
-        <Route path="/contact" element={<WIP />} /> {/* WIP for Contact page */}
-        <Route path="/about" element={<WIP />} /> {/* WIP for About page */}
+        <Route path="/work" element={<Work />} />
+        <Route path="/contact" element={<WIP />} />
+        <Route path="/about" element={<WIP />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };
